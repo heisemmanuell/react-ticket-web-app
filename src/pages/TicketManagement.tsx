@@ -49,7 +49,6 @@ const TicketManagement: React.FC = () => {
       if (storedTickets) {
         setTickets(JSON.parse(storedTickets));
       } else {
-        // Sample data for demonstration
        setTickets([]);
       }
     } catch (error) {

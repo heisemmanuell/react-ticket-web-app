@@ -8,9 +8,7 @@ import { Menu,
   CheckCircle, 
   Clock, 
   PlusCircle,
-  XCircle,
-  BarChart3,
-  ArrowRight } from 'lucide-react';
+   } from 'lucide-react';
 
 interface Ticket {
   id: string;
