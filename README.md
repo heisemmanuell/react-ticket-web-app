@@ -21,6 +21,7 @@ A modern, responsive ticket management application built with React, TypeScript,
 ### UI and Styling
 - **Tailwind CSS 4.1.16**: Utility-first CSS framework
 - **React Hot Toast**: Beautiful toast notifications
+- **Lucide-react**: For icons
 
 ### Routing and State Management
 - **React Router DOM 6.x**: Client-side routing
@@ -54,21 +55,6 @@ npm run dev
 ```
 The application will start at `http://localhost:5173`
 
-### 4. Build for Production
-```bash
-npm run build
-```
-
-### 5. Preview Production Build
-```bash
-npm run preview
-```
-
-### 6. Code Linting
-```bash
-npm run lint
-```
-
 ## 🌐 Deployment and Hosting
 
 ### Local Development
@@ -80,29 +66,20 @@ npm run lint
 - Output will be in the `dist/` directory
 - Run `npm run preview` to test production build locally
 
-### Hosting Platforms
+### Hosted On
 
-#### Vercel (Recommended)
-1. Connect your GitHub repository to Vercel
-2. Vercel will automatically detect Vite configuration
-3. Deploy with zero configuration
-
-#### Netlify
-1. Build command: `npm run build`
-2. Publish directory: `dist`
-3. Deploy the `dist` folder
-
-#### Other Static Hosts
-- Upload the `dist` folder contents to any static hosting service
-- Ensure the host supports SPA routing (single-page application)
+#### Vercel 
+- Find the app using : https://react-ticket-web-app.vercel.app/
 
 ## 📱 Usage Guide
 
 ### First Time Setup
-1. Visit the application URL
+1. Visit the application URL : https://react-ticket-web-app.vercel.app/
 2. Click "Get Started" on the landing page
 3. Fill out the signup form with your details
 4. You'll be automatically logged in and redirected to the dashboard
+5. You can go to ticket section and perform CRUD operation on tickets
+6. When done, simply click on "Logout" to exit the app
 
 ### Navigation
 - **Landing Page** (`/`): Marketing page with app information
@@ -142,7 +119,7 @@ npm run lint
 #### Layout
 - **Header**: Navigation with responsive mobile menu
 - **Main Content**: Page-specific content with max-width container (1440px)
-- **Footer**: Site-wide footer (on landing page)
+- **Footer**: Site-wide footer (on all pages)
 
 ### State Management
 
@@ -182,7 +159,7 @@ interface Ticket {
 - **Keyboard Navigation**: All interactive elements accessible via keyboard
 - **Focus Management**: Visible focus indicators and logical tab order
 - **Screen Reader Support**: ARIA labels and descriptive text
-- **Color Contrast**: WCAG AA compliant color combinations
+- **Color Contrast**: compliant color combinations
 - **Responsive Design**: Works on all screen sizes and devices
 
 ### Form Accessibility
@@ -191,7 +168,7 @@ interface Ticket {
 - **Required Fields**: Clearly marked with asterisks and ARIA attributes
 - **Input Types**: Appropriate input types (email, password, etc.)
 
-## 🐛 Known Issues and Limitations
+## Known Issues and Limitations
 
 ### Current Limitations
 1. **Data Persistence**: All data is stored in localStorage (resets on browser clear)
@@ -201,7 +178,6 @@ interface Ticket {
 
 ### Browser Compatibility
 - **Supported**: Chrome 90+, Firefox 88+, Safari 14+, Edge 90+
-- **Not Tested**: Internet Explorer (not supported)
 
 ### Performance Notes
 - **Bundle Size**: Optimized with Vite's tree-shaking
@@ -215,30 +191,7 @@ interface Ticket {
 - **localStorage**: Sensitive data stored in browser storage
 - **No Encryption**: Passwords stored in plain text (demo only)
 
-### Production Considerations
-- Implement proper backend API with authentication
-- Use secure HTTP-only cookies for session management
-- Hash passwords with bcrypt or similar
-- Implement CSRF protection and rate limiting
-- Add input sanitization and validation on server-side
-
-## 📞 Support and Contributing
+## 📞 Support
 
 ### Getting Help
-- Check the console for error messages
-- Verify browser compatibility
 - Clear localStorage if experiencing issues: `localStorage.clear()`
-
-### Development
-- Follow TypeScript strict mode guidelines
-- Use ESLint for code quality
-- Test on multiple browsers and devices
-- Follow React best practices and hooks guidelines
-
-## 📄 License
-
-This project is for demonstration purposes. Modify and use as needed for your own projects.
-
----
-
-**Built with ❤️ using React, TypeScript, and Tailwind CSS**
