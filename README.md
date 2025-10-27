@@ -2,6 +2,8 @@
 
 A modern, responsive ticket management application built with React, TypeScript, and Tailwind CSS. Features user authentication, dashboard analytics, and complete CRUD operations for ticket management.
 
+**Important**: This application does not come with pre-built user accounts. Users must register themselves using the signup form.
+
 ## 🚀 Features
 
 - **User Authentication**: Secure login/signup with localStorage simulation
